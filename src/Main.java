@@ -119,9 +119,9 @@ public class Main extends Application {
 
     public void updateTimeLabel(int totalseconds) { //metod för att räkna sekunder och sätta texten
 
-        int hours = seconds / 3600;
-        int minutes = seconds % 3600 / 60;
-        int second = seconds % 60;
+        int hours = totalseconds / 3600;
+        int minutes = totalseconds % 3600 / 60;
+        int second = totalseconds % 60;
 
         lbTime.setText(String.format("%02d:%02d:%02d", hours, minutes, second));
     }
